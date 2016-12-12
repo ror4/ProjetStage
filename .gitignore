@@ -3,3 +3,4 @@ ProjetStage.iws
 /.idea/
 /ProjetStage.iml
 /ProjetStage.ipr
+/conf/application.conf
