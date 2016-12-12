@@ -1,7 +1,7 @@
 tmp/
-ProjetStage.iws
+*.iws
 /.idea/
-/ProjetStage.iml
-/ProjetStage.ipr
+*.iml
+*.ipr
 /conf/application.conf
 
