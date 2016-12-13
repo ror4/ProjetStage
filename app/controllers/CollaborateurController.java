@@ -23,14 +23,14 @@ public class CollaborateurController extends Controller{
     }
 
     public static void formCollabo (){
-
-        renderTemplate("/formulaireCollaborateur.html");
+        List<Knowledge> listKnowledges = Knowledge.findAll();
+        renderTemplate("/formulaireCollaborateur.html",listKnowledges);
     }
 
     public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,
-                                    Date endDate,Integer con1){
+                                    Date endDate,Integer anglais){
         ICollaboServices var2 = new CollaboServices();
-        var2.createCollabo(firstName, lastName, user_email, startDate, endDate, con1);
+        var2.createCollabo(firstName, lastName, user_email, startDate, endDate, anglais);
         collabo();
     }
 }

@@ -9,11 +9,22 @@ import services.IKnowledgesServices;
 import services.KnowledgesServices;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
  * Created by Formation on 13/12/2016.
  */
 public class KnowledgesController extends Controller{
+
+    public void addKnowledge(String name) {
+        IKnowledgesServices var = new KnowledgesServices();
+        var.addKnowledge(name);
+    }
+
+    public static Knowledge getKnowledgeByName(String name) {
+        IKnowledgesServices var = new KnowledgesServices();
+        return var.getKnowledgeByName(name);
+    }
 
 }

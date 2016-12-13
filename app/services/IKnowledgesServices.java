@@ -13,7 +13,7 @@ public interface IKnowledgesServices {
 
     public void deleteKnowledge(Long id);
 
-    public List<Knowledge> getKnowledges();
+    public Knowledge getKnowledgeByName(String name);
 
     public void modifyKnowledge(Knowledge knowledge,String level);
 }

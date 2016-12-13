@@ -1,5 +1,6 @@
 package services;
 
+import controllers.KnowledgesController;
 import models.Collaborator;
 import models.Knowledge;
 import models.Knowledge_Collaborator;
@@ -27,9 +28,7 @@ public class CollaboServices implements ICollaboServices{
     @Override
     public void addKnowledgeToCollabo(Integer level, Collaborator collabo) {
         Knowledge_Collaborator know = new Knowledge_Collaborator();
-        Knowledge knowledge =new Knowledge();
-        knowledge.name="anglais";
-        knowledge.save();
+        Knowledge knowledge = KnowledgesController.getKnowledgeByName("anglais");
         know.knowledge=knowledge;
         know.level=level;
         know.collaborator=collabo;

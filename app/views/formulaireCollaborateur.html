@@ -41,23 +41,20 @@
         <div class="toggleKnowledges" style="display:none">
             <div class="knowledges">
                 <br/>
-                Connaissance 1<br/>
-                Connaissance 2<br/>
-                Connaissance 3
+                #{list items:listKnowledges, as:'knowledge'}
+                    ${knowledge.name}<br/>
+                #{/list}
             </div>
             <div class="level">
                 <div class="colNiveau">faible</div><div class="colNiveau">intermédiaire</div>
                 <div class="colNiveau">fort</div><br/>
-                <div>
-                    <input style="margin-left: 20px;" name="con1" type="radio" value="1">
-                    <input style="margin-left: 52px;" name="con1" type="radio" value="2">
-                    <input style="margin-left: 45px;"name="con1" type="radio" value="3">
-                </div>
-                <div>
-                    <input style="margin-left: 20px;" name="con2" type="radio" value="1">
-                    <input style="margin-left: 52px;" name="con2" type="radio" value="2">
-                    <input style="margin-left: 45px;"name="con2" type="radio" value="3">
-                </div>
+                #{list items:listKnowledges, as:'knowledge'}
+                    <div>
+                        <input style="margin-left: 20px;" name=${knowledge.name} type="radio" value="1">
+                        <input style="margin-left: 52px;" name=${knowledge.name} type="radio" value="2">
+                        <input style="margin-left: 45px;" name=${knowledge.name} type="radio" value="3">
+                    </div>
+                #{/list}
             </div>
         </div>
     </fieldset>

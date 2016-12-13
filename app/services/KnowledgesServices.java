@@ -14,7 +14,9 @@ public class KnowledgesServices implements IKnowledgesServices {
 
     @Override
     public void addKnowledge(String name) {
-
+        Knowledge know = new Knowledge();
+        know.name=name;
+        know.save();
     }
 
     @Override
@@ -23,8 +25,9 @@ public class KnowledgesServices implements IKnowledgesServices {
     }
 
     @Override
-    public List<Knowledge> getKnowledges() {
-        return null;
+    public Knowledge getKnowledgeByName(String name) {
+        List<Knowledge> know = Knowledge.find("name=?",name).fetch();
+        return know.get(0);
     }
 
     @Override
