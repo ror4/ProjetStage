@@ -8,4 +8,5 @@ import javax.persistence.Entity;
 public class Knowledge extends Model {
     public String name;
     public String level;
+    public long Collaborator_id;
 }
