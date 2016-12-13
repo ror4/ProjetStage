@@ -41,11 +41,11 @@ public class Collaborator extends Model{
     //@Required
     public float averageDailyCost;
 
-    @OneToMany (mappedBy = "role")
-    public Set<Role> Role;
+    @OneToMany (mappedBy = "collaborator")
+    public Set<Role> roles;
 
-    //@OneToMany (mappedBy = "Knowledge")
-    public ArrayList<Knowledge> knowledges;
+    @OneToMany (mappedBy = "collaborator")
+    public Set<Knowledge> knowledges;
 
     //@Required
     public String password;
