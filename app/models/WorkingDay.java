@@ -1,15 +1,22 @@
 package models;
 
-import org.joda.time.DateTime;
+
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import java.util.Date;
 
 @Entity
 public class WorkingDay extends Model {
+
+    @ManyToOne
     public Collaborator collaborator;
-    public DateTime date;
-    public String MorningActivity;
+    @Temporal(TemporalType.DATE)
+    public Date dayDate;
+    public String morningActivity;
     public String afternoonActivity;
 
 }
