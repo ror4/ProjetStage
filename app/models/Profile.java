@@ -5,7 +5,7 @@ import play.db.jpa.Model;
 import javax.persistence.Entity;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 public class Profile extends Model{
@@ -15,5 +15,5 @@ public class Profile extends Model{
 
     @ManyToMany
     @JoinTable(name="Project_Profile")
-    public Set<Project> projects;
+    public List<Project> projects;
 }

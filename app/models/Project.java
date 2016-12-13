@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 public class Project extends Model {
@@ -20,15 +20,15 @@ public class Project extends Model {
 
     @ManyToMany
     @JoinTable(name="Project_Contact")
-    public Set<Contact> contacts;
+    public List<Contact> contacts;
 
     @ManyToMany
     @JoinTable(name="Project_Profile")
-    public Set<Profile> profiles;
+    public List<Profile> profiles;
 
     @ManyToMany
     @JoinTable(name="Collaborator_Project")
-    public Set<Collaborator> collaborators;
+    public List<Collaborator> collaborators;
 
     public enum Status{
         PENDING, ONGOING, GUARANTEE, MAINTENANCE, DONE
