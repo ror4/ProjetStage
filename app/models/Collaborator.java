@@ -7,7 +7,7 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 import java.util.ArrayList;
 
 
@@ -32,7 +32,7 @@ public class Collaborator extends Model{
 
     public Date endDate;
 
-    @OneToMany (mappedBy = "SalariesHistory")
+
     public ArrayList<SalariesHistory> Salaries;
 
     //@Required
@@ -41,10 +41,10 @@ public class Collaborator extends Model{
     //@Required
     public float averageDailyCost;
 
-    @OneToMany (mappedBy = "Role")
+    //@OneToMany (mappedBy = "Role")
     public ArrayList<Role> Roles;
 
-    @OneToMany (mappedBy = "Knowledge")
+    //@OneToMany (mappedBy = "Knowledge")
     public ArrayList<Knowledge> knowledges;
 
     //@Required
@@ -53,7 +53,7 @@ public class Collaborator extends Model{
     public String token;
 
     @Temporal(TemporalType.DATE)
-    public DateTime tokenCreatedAt;
+    public Date tokenCreatedAt;
 
 
 }
