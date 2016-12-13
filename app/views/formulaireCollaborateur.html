@@ -17,23 +17,44 @@
     </fieldset>
     <br/>
     <fieldset>
-        <legend>???</legend>
+        <legend>Dates</legend>
             <label>Start Date</label>
             <input type="date" name="startDate" placeholder="25/12/2000" required>
             <label class="noFirstLabel">End Date</label>
-            <input type="date" name="endDate" placeholder="25/12/2000" required>
-            <!--<li>-->
-                <!--<label>Code postal</label>-->
-                <!--<input id=codepostal name=codePostal type=text placeholder="14280" required>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<label>Ville</label>-->
-                <!--<input id=ville name=ville type=text placeholder="Caen" required>-->
-            <!--</li>-->
+            <input type="date" name="endDate" placeholder="25/12/2000">
     </fieldset>
-    <!--<input type="hidden" name="idCommande" value=${idCommande}>-->
+    <br/>
+    <fieldset>
+        <legend>Knowledges</legend>
+        <button type="button" class="toggleKnowledgesButton">Add</button>
+        <div class="toggleKnowledges" style="display:none">
+            <div class="knowledges">
+                <br/>
+                Anglais<br/>
+                Italien
+            </div>
+            <div class="level">
+                <div class="colNiveau">faible</div><div class="colNiveau">intermédiaire</div>
+                <div class="colNiveau">fort</div><br/>
+                <div>
+                    <input style="margin-left: 20px;" name="ang" type="radio" value="1">
+                    <input style="margin-left: 52px;" name="ang" type="radio" value="2">
+                    <input style="margin-left: 45px;"name="ang" type="radio" value="3">
+                </div>
+                <div>
+                    <input style="margin-left: 20px;" name="it" type="radio" value="1">
+                    <input style="margin-left: 52px;" name="it" type="radio" value="2">
+                    <input style="margin-left: 45px;"name="it" type="radio" value="3">
+                </div>
+            </div>
+        </div>
+    </fieldset>
     <br/>
     <fieldset>
         <button type=submit>Valider</button>
     </fieldset>
 </form>
+
+#{set 'moreScripts'}
+#{script 'formCollabo.js'/}
+#{/set}

@@ -1,13 +1,14 @@
 package controllers;
 
 import models.Collaborator;
+import models.Knowledge;
 import play.mvc.Controller;
 import services.CollaboServices;
 import services.ICollaboServices;
+import services.IKnowledgesServices;
+import services.KnowledgesServices;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Formation on 13/12/2016.
@@ -25,15 +26,17 @@ public class CollaborateurController extends Controller{
         renderTemplate("/formulaireCollaborateur.html");
     }
 
-    public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,Date endDate){
+    public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,
+                                    Date endDate,String ang){
         Collaborator collaborator = new Collaborator();
-        collaborator.firstName=firstName;
-        collaborator.lastName=lastName;
+        collaborator.firstName=firstName.trim();
+        collaborator.lastName=lastName.trim();
         collaborator.email=user_email.trim();
         collaborator.startDate=startDate;
         collaborator.endDate=endDate;
-        ICollaboServices var = new CollaboServices();
-        var.createCollabo(collaborator);
+        ICollaboServices var2 = new CollaboServices();
+        var2.createCollabo(collaborator);
+        KnowledgesController.createKnowledge(ang,collaborator);
         collabo();
     }
 }
