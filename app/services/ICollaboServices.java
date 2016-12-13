@@ -2,6 +2,7 @@ package services;
 
 import models.Collaborator;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -9,7 +10,10 @@ import java.util.List;
  */
 public interface ICollaboServices {
 
-    public void createCollabo(Collaborator collabo);
+    public void createCollabo(String firstName, String lastName, String user_email,Date startDate,
+                              Date endDate, Integer ang);
+
+    public void addKnowledgeToCollabo(Integer ang, Collaborator collabo);
 
     public void deleteCollabo(Long id);
 

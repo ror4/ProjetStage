@@ -13,13 +13,8 @@ import java.util.Set;
 public class KnowledgesServices implements IKnowledgesServices {
 
     @Override
-    public void addKnowledge(Integer levelKnowledge, Collaborator collabo) {
-//        Set<Knowledge> listKnowledge = new HashSet();
-        Knowledge know = new Knowledge();
-        know.name = "anglais";
-        know.level = levelKnowledge;
-        know.collaborator=collabo;
-        know.save();
+    public void addKnowledge(String name) {
+
     }
 
     @Override

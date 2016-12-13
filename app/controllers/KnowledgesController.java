@@ -16,8 +16,4 @@ import java.util.Set;
  */
 public class KnowledgesController extends Controller{
 
-    public static void createKnowledge(Integer levelKnowledge, Collaborator collabo) {
-        IKnowledgesServices var = new KnowledgesServices();
-        var.addKnowledge(levelKnowledge,collabo);
-    }
 }

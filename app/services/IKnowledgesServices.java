@@ -1,6 +1,5 @@
 package services;
 
-import models.Collaborator;
 import models.Knowledge;
 
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.List;
  */
 public interface IKnowledgesServices {
 
-    public void addKnowledge(Integer ang, Collaborator collabo);
+    public void addKnowledge(String name);
 
     public void deleteKnowledge(Long id);
 

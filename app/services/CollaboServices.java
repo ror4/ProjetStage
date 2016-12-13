@@ -2,11 +2,9 @@ package services;
 
 import models.Collaborator;
 import models.Knowledge;
+import models.Knowledge_Collaborator;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Formation on 12/12/2016.
@@ -14,8 +12,27 @@ import java.util.Set;
 public class CollaboServices implements ICollaboServices{
 
     @Override
-    public void createCollabo(Collaborator collabo) {
-        collabo.save();
+    public void createCollabo(String firstName, String lastName, String user_email,Date startDate,
+                              Date endDate, Integer level) {
+        Collaborator collaborator = new Collaborator();
+        collaborator.firstName=firstName.trim();
+        collaborator.lastName=lastName.trim();
+        collaborator.email=user_email.trim();
+        collaborator.startDate=startDate;
+        collaborator.endDate=endDate;
+        collaborator.save();
+        addKnowledgeToCollabo(level,collaborator);
+    }
+
+    @Override
+    public void addKnowledgeToCollabo(Integer level, Collaborator collabo) {
+        Knowledge_Collaborator know = new Knowledge_Collaborator();
+        Knowledge knowledge =new Knowledge();
+        knowledge.name="anglais";
+        know.knowledge=knowledge;
+        know.level=level;
+        know.collaborator=collabo;
+        know.save();
     }
 
     @Override
