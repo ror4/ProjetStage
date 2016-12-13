@@ -9,4 +9,7 @@ import javax.persistence.Entity;
 public class WorkingDay extends Model {
     public Collaborator collaborator;
     public DateTime date;
+    public String MorningActivity;
+    public String afternoonActivity;
+
 }

@@ -12,10 +12,10 @@ public class WorkingDayActivities extends Model {
 
         // Je ne savais pas comment nommer les enums, à renommer.
 
-        TIME_1(0.25),
-        TIME_2(0.5),
-        TIME_3(0.75),
-        TIME_4(1);
+        TIME_SPEND_1(0.25),
+        TIME_SPEND_2(0.5),
+        TIME_SPEND_3(0.75),
+        TIME_SPEND_4(1);
 
         private final double value;
         timeSpend(double value){

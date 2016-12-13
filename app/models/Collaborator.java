@@ -8,7 +8,7 @@ import play.db.jpa.Model;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 
@@ -56,6 +56,10 @@ public class Collaborator extends Model{
 
     @Temporal(TemporalType.DATE)
     public Date tokenCreatedAt;
+
+    @ManyToMany
+    @JoinTable (name = "Collaborator_Project")
+    public List<Project> projects;
 
 
 }
