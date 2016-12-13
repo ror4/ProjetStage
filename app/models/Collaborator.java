@@ -47,7 +47,7 @@ public class Collaborator extends Model{
     public Set<Role> roles;
 
     @OneToMany (mappedBy = "collaborator")
-    public Set<Knowledge> knowledges;
+    public Set<Knowledge_Collaborator> knowledge_collaborators;
 
     @OneToMany(mappedBy = "collaborator")
     public Set<WorkingDay> workingDays;
