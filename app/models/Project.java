@@ -20,15 +20,15 @@ public class Project extends Model {
 
     @ManyToMany
     @JoinTable(name="Project_Contact")
-    public Set<Contact> contact;
+    public Set<Contact> contacts;
 
     @ManyToMany
     @JoinTable(name="Project_Profile")
-    public Set<Profile> profile;
+    public Set<Profile> profiles;
 
-//    @ManyToMany
-//    @JoinTable(name="Collaborator_Project")
-//    public Collaborator collaborator;
+    @ManyToMany
+    @JoinTable(name="Collaborator_Project")
+    public Set<Collaborator> collaborators;
 
     public enum Status{
         PENDING, ONGOING, GUARANTEE, MAINTENANCE, DONE

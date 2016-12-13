@@ -15,5 +15,5 @@ public class Profile extends Model{
 
     @ManyToMany
     @JoinTable(name="Project_Profile")
-    public Set<Project> project;
+    public Set<Project> projects;
 }

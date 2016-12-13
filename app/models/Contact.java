@@ -17,5 +17,5 @@ public class Contact extends Model {
 
     @ManyToMany
     @JoinTable(name="Project_Contact")
-    public Set<Project> project;
+    public Set<Project> projects;
 }
