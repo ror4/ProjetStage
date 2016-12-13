@@ -12,7 +12,7 @@ import java.util.Set;
 public class Project extends Model {
     public String name;
     public enum Type{
-        INTERNE, CLIENT
+        INTERNAL, CLIENT
     }
 
     @ManyToOne
