@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 public class WorkingDayActivities extends Model {
     public Project project;
     public Profile profile;
-    public enum Time {
+    public enum timeSpend {
 
         // Je ne savais pas comment nommer les enums, à renommer.
 
@@ -18,7 +18,7 @@ public class WorkingDayActivities extends Model {
         TIME_4(1);
 
         private final double value;
-        Time(double value){
+        timeSpend(double value){
             this.value = value;
         }
 

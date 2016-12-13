@@ -23,6 +23,8 @@ public class Collaborator extends Model{
 
     //@Required
     @Email
+
+
     public String email;
 
     //@Required
@@ -42,10 +44,10 @@ public class Collaborator extends Model{
     public float averageDailyCost;
 
     @OneToMany (mappedBy = "collaborator")
-    public Set<Role> Role;
+    public Set<Role> roles;
 
-    //@OneToMany (mappedBy = "Knowledge")
-    public ArrayList<Knowledge> knowledges;
+    @OneToMany (mappedBy = "collaborator")
+    public Set<Knowledge> knowledges;
 
     //@Required
     public String password;

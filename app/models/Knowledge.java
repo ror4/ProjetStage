@@ -3,10 +3,13 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Knowledge extends Model {
     public String name;
     public String level;
-    public long Collaborator_id;
+
+    @ManyToOne
+    public Collaborator collaborator;
 }
