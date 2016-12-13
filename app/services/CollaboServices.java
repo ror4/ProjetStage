@@ -2,6 +2,7 @@ package services;
 
 import models.Collaborator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,7 +12,7 @@ public class CollaboServices implements ICollaboServices{
 
     @Override
     public void createCollabo(Collaborator collabo) {
-
+        collabo.save();
     }
 
     @Override
@@ -26,7 +27,9 @@ public class CollaboServices implements ICollaboServices{
 
     @Override
     public List<Collaborator> getAllCollabo() {
-        return null;
+        List<Collaborator> listeCollabo= new ArrayList();
+        listeCollabo=Collaborator.findAll();
+        return listeCollabo;
     }
 
     @Override

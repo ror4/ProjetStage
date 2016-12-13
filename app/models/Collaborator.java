@@ -9,6 +9,4 @@ public class Collaborator extends Model{
 
     public String firstName;
     public String lastName;
-    
-
 }

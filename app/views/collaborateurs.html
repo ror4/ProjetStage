@@ -2,3 +2,9 @@
 #{set title:'Collaborateurs' /}
 
 <a href="/">Retourner à l'accueil</a>
+<a href="/formulaireCollaborateur">Ajouter un collaborateur</a>
+
+#{list items:listeCollabo, as:'collabo'}
+    <div>${collabo.firstName}</div>
+#{/list}
+

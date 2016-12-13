@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0dd88ca-bf34-46fc-b78f-d9c45e94ea5e" name="Default" comment="application conf -&gt; ignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Collaborator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/CollaboServices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/ICollaboServices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/IKnowledgesServices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collaborateurs.html" />
+    <list default="true" id="d0dd88ca-bf34-46fc-b78f-d9c45e94ea5e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/CollaborateurController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/KnowledgesServices.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/formulaireCollaborateur.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetStage.iml" afterPath="$PROJECT_DIR$/ProjetStage.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/index.html" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Collaborator.java" afterPath="$PROJECT_DIR$/app/models/Collaborator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/CollaboServices.java" afterPath="$PROJECT_DIR$/app/services/CollaboServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/IKnowledgesServices.java" afterPath="$PROJECT_DIR$/app/services/IKnowledgesServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/collaborateurs.html" afterPath="$PROJECT_DIR$/app/views/collaborateurs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
     </list>
     <ignored path="ProjetStage2.iws" />
@@ -34,24 +35,44 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICollaboServices.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/ICollaboServices.java">
+      <file leaf-file-name="CollaborateurController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/CollaborateurController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="254">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collaborateurs.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collaborator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Collaborator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,46 +83,36 @@
       <file leaf-file-name="CollaboServices.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/CollaboServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IKnowledgesServices.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/IKnowledgesServices.java">
+      <file leaf-file-name="ICollaboServices.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/ICollaboServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <file leaf-file-name="formulaireCollaborateur.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/formulaireCollaborateur.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collaborator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/Collaborator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -110,38 +121,8 @@
       <file leaf-file-name="routes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collaborateurs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="136">
+              <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -152,9 +133,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -171,16 +152,21 @@
       <list>
         <option value="$PROJECT_DIR$/tmp/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
+        <option value="$PROJECT_DIR$/app/services/Services.java" />
+        <option value="$PROJECT_DIR$/app/services/IConnaissancesServices.java" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
+        <option value="$PROJECT_DIR$/app/services/IKnowledgesServices.java" />
+        <option value="$PROJECT_DIR$/app/services/KnowledgesServices.java" />
+        <option value="$PROJECT_DIR$/app/views/formulaire collaborateur.html" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/services/ICollaboServices.java" />
         <option value="$PROJECT_DIR$/app/views/collaborateurs.html" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/app/services/Services.java" />
-        <option value="$PROJECT_DIR$/app/services/ICollaboServices.java" />
         <option value="$PROJECT_DIR$/app/services/CollaboServices.java" />
-        <option value="$PROJECT_DIR$/app/services/IConnaissancesServices.java" />
-        <option value="$PROJECT_DIR$/app/services/IKnowledgesServices.java" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
+        <option value="$PROJECT_DIR$/app/views/formulaireCollaborateur.html" />
+        <option value="$PROJECT_DIR$/app/models/Collaborator.java" />
+        <option value="$PROJECT_DIR$/app/controllers/CollaborateurController.java" />
       </list>
     </option>
   </component>
@@ -272,6 +258,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -314,6 +304,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetStage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetStage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetStage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -643,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481537005799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="page collaborateurs + CollaboServices">
+      <created>1481551318473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1481551318473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -658,11 +677,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -710,7 +729,9 @@
     <MESSAGE value="page accueil" />
     <MESSAGE value="test" />
     <MESSAGE value="application conf -&gt; ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="application conf -&gt; ignore" />
+    <MESSAGE value="page collaborateurs" />
+    <MESSAGE value="page collaborateurs + CollaboServices" />
+    <option name="LAST_COMMIT_MESSAGE" value="page collaborateurs + CollaboServices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -727,10 +748,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,82 +785,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/Services.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/ICollaboServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/CollaboServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/IKnowledgesServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -856,11 +801,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Collaborator.java">
+    <entry file="file://$PROJECT_DIR$/app/models/Knowledge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/IKnowledgesServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/KnowledgesServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/ICollaboServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formulaireCollaborateur.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/CollaboServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Collaborator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CollaborateurController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

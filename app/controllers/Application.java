@@ -13,8 +13,4 @@ public class Application extends Controller {
         render();
     }
 
-    public static void collabo (){
-        renderTemplate("/collaborateurs.html");
-    }
-
 }
