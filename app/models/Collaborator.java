@@ -9,8 +9,7 @@ import play.db.jpa.Model;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.ArrayList;
-
-
+import java.util.Set;
 
 
 @Entity
@@ -33,8 +32,8 @@ public class Collaborator extends Model{
     @Temporal(TemporalType.DATE)
     public Date endDate;
 
-
-    public ArrayList<SalariesHistory> Salaries;
+    @OneToMany (mappedBy = "collaborator")
+    public Set<SalariesHistory> salariesHistories;
 
     //@Required
     public float loadFactor;
@@ -42,8 +41,8 @@ public class Collaborator extends Model{
     //@Required
     public float averageDailyCost;
 
-    //@OneToMany (mappedBy = "Role")
-    public ArrayList<Role> Roles;
+    @OneToMany (mappedBy = "role")
+    public Set<Role> Role;
 
     //@OneToMany (mappedBy = "Knowledge")
     public ArrayList<Knowledge> knowledges;
