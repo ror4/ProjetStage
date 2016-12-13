@@ -3,11 +3,17 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class WorkingDayActivities extends Model {
+
+    @ManyToOne
     public Project project;
+
+    @ManyToOne
     public Profile profile;
+
     public enum timeSpend {
 
         // Je ne savais pas comment nommer les enums, à renommer.

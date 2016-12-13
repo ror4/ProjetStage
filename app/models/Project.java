@@ -2,11 +2,9 @@ package models;
 
 import play.db.jpa.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Project extends Model {
@@ -29,6 +27,10 @@ public class Project extends Model {
     @ManyToMany
     @JoinTable(name="Collaborator_Project")
     public List<Collaborator> collaborators;
+
+    @OneToMany (mappedBy = "project")
+    public Set<WorkingDayActivities> workingDayActivities;
+
 
     public enum Status{
         PENDING, ONGOING, GUARANTEE, MAINTENANCE, DONE
