@@ -6,4 +6,6 @@ import javax.persistence.Entity;
 
 @Entity
 public class Knowledge extends Model {
+    public String name;
+    public String level;
 }
