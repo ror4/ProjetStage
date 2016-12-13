@@ -27,7 +27,7 @@ public class CollaborateurController extends Controller{
     }
 
     public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,
-                                    Date endDate,String ang){
+                                    Date endDate,Integer ang){
         Collaborator collaborator = new Collaborator();
         collaborator.firstName=firstName.trim();
         collaborator.lastName=lastName.trim();
