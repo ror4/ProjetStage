@@ -11,7 +11,7 @@ import java.util.Set;
 public class Knowledge extends Model {
     public String name;
 
-    @OneToMany(mappedBy = "knowledge")
-    public Set<Knowledge_Collaborator> knowledge_collaborators;
+//    @OneToMany(mappedBy = "knowledge")
+//    public Set<Knowledge_Collaborator> knowledge_collaborators;
 
 }
