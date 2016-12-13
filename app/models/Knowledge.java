@@ -8,7 +8,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Knowledge extends Model {
     public String name;
-    public String level;
+    public int level;
 
     @ManyToOne
     public Collaborator collaborator;
