@@ -1,11 +1,11 @@
 package models;
 
 
-import models.Knowledge_Collaborator;
 import org.joda.time.DateTime;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import java.sql.Date;
 import java.util.ArrayList;
 
@@ -17,12 +17,15 @@ public class Collaborator extends Model{
     public String lastName;
     public String email;
     public Date startDate;
-    public float salary;
+    public Date endDate;
+    @ManyToOne
+    public long SalariesHistory_Id;
     public float loadFactor;
     public float averageDailyCost;
     public String password;
+    @
     public long role_id;
-    public ArrayList<Knowledge_Collaborator> knowlegdes;
+    public ArrayList<Knowledge> knowlegdes;
     public String token;
     public DateTime tokenCreatedAt;
 
