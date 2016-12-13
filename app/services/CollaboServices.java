@@ -29,6 +29,7 @@ public class CollaboServices implements ICollaboServices{
         Knowledge_Collaborator know = new Knowledge_Collaborator();
         Knowledge knowledge =new Knowledge();
         knowledge.name="anglais";
+        knowledge.save();
         know.knowledge=knowledge;
         know.level=level;
         know.collaborator=collabo;
