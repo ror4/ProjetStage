@@ -19,4 +19,8 @@ public class Contact extends Model {
     @ManyToMany
     @JoinTable(name="Project_Contact")
     public List<Project> projects;
+
+    @ManyToMany
+    @JoinTable (name="Contact_Client")
+    public List<Client> clients;
 }
