@@ -6,6 +6,7 @@ import services.CollaboServices;
 import services.ICollaboServices;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,9 +25,13 @@ public class CollaborateurController extends Controller{
         renderTemplate("/formulaireCollaborateur.html");
     }
 
-    public void createCollaborator (String prenom){
+    public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,Date endDate){
         Collaborator collaborator = new Collaborator();
-        collaborator.firstName=prenom;
+        collaborator.firstName=firstName;
+        collaborator.lastName=lastName;
+        collaborator.email=user_email.trim();
+        collaborator.startDate=startDate;
+        collaborator.endDate=endDate;
         ICollaboServices var = new CollaboServices();
         var.createCollabo(collaborator);
         collabo();

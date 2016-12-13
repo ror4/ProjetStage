@@ -3,26 +3,25 @@
 
 <a href="/">Retourner à l'accueil</a>
 <a href="/collaborateurs">Retour à la liste des collaborateurs</a>
+<br/><br/>
 
 <form action="@{CollaborateurController.createCollaborator}" method="post">
     <fieldset>
-        <legend>Votre identité</legend>
-
-        <ul>
-            <li>
-                <label>Nom</label>
-                <input id=nom name=prenom type=text placeholder="Prénom" required autofocus>
-            </li>
-        </ul>
+        <legend>Identité du collaborateur</legend>
+            <label>Last Name</label>
+            <input onkeyup='this.value=this.value.toUpperCase()' name=lastName type=text placeholder="Last Name" required autofocus>
+            <label class="noFirstLabel">First Name</label>
+            <input name=firstName type=text placeholder="First Name" required>
+            <label class="noFirstLabel">User email</label>
+            <input type="email" name="user_email" placeholder="User email" required>
     </fieldset>
-
-    <!--<fieldset>-->
-        <!--<legend>Adresse de livraison</legend>-->
-        <!--<ul>-->
-            <!--<li>-->
-                <!--<label>Adresse</label>-->
-                <!--<input id=adresse name=adresse rows=1 placeholder="11, rue Alfred Kastler" required>-->
-            <!--</li>-->
+    <br/>
+    <fieldset>
+        <legend>???</legend>
+            <label>Start Date</label>
+            <input type="date" name="startDate" placeholder="25/12/2000" required>
+            <label class="noFirstLabel">End Date</label>
+            <input type="date" name="endDate" placeholder="25/12/2000" required>
             <!--<li>-->
                 <!--<label>Code postal</label>-->
                 <!--<input id=codepostal name=codePostal type=text placeholder="14280" required>-->
@@ -31,9 +30,9 @@
                 <!--<label>Ville</label>-->
                 <!--<input id=ville name=ville type=text placeholder="Caen" required>-->
             <!--</li>-->
-        <!--</ul>-->
-    <!--</fieldset>-->
+    </fieldset>
     <!--<input type="hidden" name="idCommande" value=${idCommande}>-->
+    <br/>
     <fieldset>
         <button type=submit>Valider</button>
     </fieldset>

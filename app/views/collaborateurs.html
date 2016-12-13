@@ -4,7 +4,9 @@
 <a href="/">Retourner à l'accueil</a>
 <a href="/formulaireCollaborateur">Ajouter un collaborateur</a>
 
+<ul>
 #{list items:listeCollabo, as:'collabo'}
-    <div>${collabo.firstName}</div>
+    <li>${collabo.firstName} ${collabo.lastName}</li>
 #{/list}
+</ul>
 

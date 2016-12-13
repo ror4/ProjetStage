@@ -30,6 +30,7 @@ public class Collaborator extends Model{
     @Temporal(TemporalType.DATE)
     public Date startDate;
 
+    @Temporal(TemporalType.DATE)
     public Date endDate;
 
 
