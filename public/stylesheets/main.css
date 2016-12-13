@@ -1,3 +1,17 @@
 .noFirstLabel{
     margin-left: 10px;
 }
+
+.knowledges{
+    float:left;
+}
+
+.level{
+    float: left;
+    margin-left: 15px;
+}
+
+.colNiveau{
+    float:left;
+    margin-left: 10px;
+}

@@ -1,9 +1,12 @@
 package services;
 
 import models.Collaborator;
+import models.Knowledge;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by Formation on 12/12/2016.
