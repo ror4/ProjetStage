@@ -49,6 +49,9 @@ public class Collaborator extends Model{
     @OneToMany (mappedBy = "collaborator")
     public Set<Knowledge> knowledges;
 
+    @OneToMany(mappedBy = "collaborator")
+    public Set<WorkingDay> workingDays;
+
     //@Required
     public String password;
 
