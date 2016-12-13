@@ -23,6 +23,8 @@ public class Collaborator extends Model{
 
     //@Required
     @Email
+
+
     public String email;
 
     //@Required
