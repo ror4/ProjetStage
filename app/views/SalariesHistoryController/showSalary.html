@@ -1,0 +1,20 @@
+#{extends 'main.html' /}
+#{set title:'Salary History' /}
+
+<a href="@{Application.index}">Home</a> <a href="@{CollaborateurController.collabo}">Collaborators</a><br/>
+<h2>Salary History of ${collaborator.lastName} ${collaborator.firstName}</h2>
+
+<table>
+    <tr>
+        <th>Date Change</th>
+        <th>Salary</th>
+        <th>Comments</th>
+    </tr>
+#{list items:salariesHistory, as:'salaries'}
+        <tr>
+            <td>${salaries.changeDate}</td>
+            <td>${salaries.salary}</td>
+            <td>${salaries.comments}</td>
+        </tr>
+#{/list}
+</table>
