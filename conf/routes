@@ -9,6 +9,7 @@ GET     /gestionJourCollabo                     CollaborateurController.formAddW
 GET     /formulaireCollaborateur                CollaborateurController.formCollabo
 
 POST    /collaborateurs                         CollaborateurController.createCollaborator
+GET     /getAllKnowledgeJson                    KnowledgesController.getAllKnowledgeJson
 
 GET     /projects                               ProjectController.projects
 GET     /formulaireProjet                       ProjectController.formulaireProject

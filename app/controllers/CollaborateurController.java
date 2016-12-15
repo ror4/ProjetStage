@@ -33,9 +33,9 @@ public class CollaborateurController extends Controller{
         renderTemplate("/formulaireJoursTravailles.html", listeCollabo);
     }
     public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,
-                                    Date endDate,Integer anglais, String role){
+                                    Date endDate, String knowledges, String role){
         ICollaboServices var2 = new CollaboServices();
-        var2.createCollabo(firstName, lastName, user_email, startDate, endDate, anglais,role);
+        var2.createCollabo(firstName, lastName, user_email, startDate, endDate, knowledges, role);
         collabo();
     }
 }

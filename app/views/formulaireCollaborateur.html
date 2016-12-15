@@ -37,30 +37,14 @@
     <br/>
     <fieldset>
         <legend>Knowledges</legend>
-        <button type="button" class="toggleKnowledgesButton">Add</button>
+        <button type="button" class="toggleKnowledgesButton" onclick="importJson()">Add</button>
         <div class="toggleKnowledges" style="display:none">
-            <div class="knowledges">
-                <br/>
-                #{list items:listKnowledges, as:'knowledge'}
-                    ${knowledge.name}<br/>
-                #{/list}
-            </div>
-            <div class="level">
-                <div class="colNiveau">faible</div><div class="colNiveau">intermédiaire</div>
-                <div class="colNiveau">fort</div><br/>
-                #{list items:listKnowledges, as:'knowledge'}
-                    <div>
-                        <input style="margin-left: 20px;" name=${knowledge.name} type="radio" value="1">
-                        <input style="margin-left: 52px;" name=${knowledge.name} type="radio" value="2">
-                        <input style="margin-left: 45px;" name=${knowledge.name} type="radio" value="3">
-                    </div>
-                #{/list}
-            </div>
         </div>
+        <input name='knowledges' id='truc' style='display:none'>
     </fieldset>
     <br/>
     <fieldset>
-        <button type=submit>Valider</button>
+        <button class="validForm" type=submit>Valider</button>
     </fieldset>
 </form>
 

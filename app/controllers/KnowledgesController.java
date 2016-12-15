@@ -27,4 +27,10 @@ public class KnowledgesController extends Controller{
         return var.getKnowledgeByName(name);
     }
 
+    public static void getAllKnowledgeJson() {
+        IKnowledgesServices var = new KnowledgesServices();
+        List<Knowledge> listeKnowledge = var.getAllKnowledgeJson();
+        renderJSON(listeKnowledge);
+    }
+
 }

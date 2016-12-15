@@ -11,10 +11,12 @@ import java.util.List;
 public interface ICollaboServices {
 
     public void createCollabo(String firstName, String lastName, String user_email,Date startDate,
-                              Date endDate, Integer ang, String Role);
+                              Date endDate, String knowledges, String Role);
 
-    public void addKnowledgeToCollabo(Integer ang, Collaborator collabo);
+    public void addKnowledgeToCollabo(String knowledges, Collaborator collabo);
+
     public void addRoleToCollabo(String role, Collaborator collabo);
+
     public void deleteCollabo(Long id);
 
     public Collaborator modifCollabo(Collaborator collabo);
