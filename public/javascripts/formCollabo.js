@@ -1,8 +1,9 @@
-$( ".toggleKnowledgesButton" ).click(function() {
-    $( ".toggleKnowledges" ).toggle();
+$( document ).ready(function() {
+    importJson();
 });
 
 function affichage(data){
+    console.log(data);
     var nombre = 0;
     var choix = 0;
     $(data).each(function( index ) {
@@ -23,7 +24,6 @@ function affichage(data){
 }
 
 function importJson(){
-
     $.ajax({
        url : "/getAllKnowledgeJson",
        dataType : 'json',
