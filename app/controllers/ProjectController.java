@@ -37,19 +37,11 @@ public class ProjectController extends Controller {
         renderTemplate("/Projects/formulaireProjet.html", clientList, profilList);
     }
 
-    public void createProject(String projectName, Project.Type projectType){
+    public void createProject(Project project){
 
-        List<Client> clientList = new ArrayList();
-        IClientServices var = new ClientServices();
-        clientList = var.getAllClient();
+        project.save();
 
-        List<Profile> profilList = new ArrayList();
-        IProfileServices var3 = new ProfileServices();
-        profilList = var3.getAllProfile();
 
-        IProjectServices var2 =  new ProjectServices();
-        var2.createProject(projectName, projectType);
-        projects();
     }
 }
 

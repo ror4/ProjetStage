@@ -1,22 +1,22 @@
 #{extends 'main.html' /}
 #{set title:'Projects' /}
 
-<a href="/" xmlns="http://www.w3.org/1999/html">Retourner à l'accueil</a>
+<a href="/" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">Retourner à l'accueil</a>
 <a href="/formulaireProjet">Ajouter un Projet</a>
 
 <form action="@{ProjectController.createProject}" method="post">
     <fieldset>
         <legend>Identité du Projet</legend>
         <label>Nom</label>
-        <input type="text" name="projectName" placeholder="Nom du projet" required autofocus/>
+        <input type="text" name="project.name" placeholder="Nom du projet" required autofocus/>
         <br/><br/>
         <label>Type de Projet</label>
         <div class="toggleButtonFormProject">
-        <input type="radio"  name="projectType" value="INTERNAL" checked> Interne </input>
-        <input type="radio"  name="projectType" value="CLIENT"> Client </input>
+        <input type="radio"  name="project.type" value="INTERNAL" checked> Interne </input>
+        <input type="radio"  name="project.type" value="CLIENT"> Client </input>
         </div>
             <div id="choixClient" style="display: none">
-                <select name="projectClient">
+                <select name="project.client.id" >
                 #{list items:clientList, as:'client'}
                     <option value=${client.id} >${client.corporateName}</option>
                 #{/list}
@@ -28,7 +28,7 @@
     </fieldset>
     <br/>
     <fieldset>
-        <select name="choixProfile">
+        <select name="project.profiles" multiple>
         #{list items:profilList, as:'profile'}
             <option value=${profile.id} >${profile.name}</option>
         #{/list}
@@ -40,6 +40,11 @@
     </fieldset>
     <br/>
     <fieldset>
+        <input type="checkbox" name="project.status" value="PENDING"> En attente </input>
+        <input type="checkbox" name="project.status" value="ONGOING"> En cours </input>
+        <input type="checkbox" name="project.status" value="GUARANTEE"> Garantie </input>
+        <input type="checkbox" name="project.status" value="MAINTENANCE"> Maintenance </input>
+        <input type="checkbox" name="project.status" value="DONE"> Terminé </input>
 
     </fieldset>
     <br/>
