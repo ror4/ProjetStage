@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Gestion des jours travaillé</title>
+</head>
+<body>
+
+<form name="choixCollabo">
+    <select name="collabo_id">
+    #{list items:listeCollabo, as:'collabo'}
+        <option value=${collabo.id} >${collabo.firstName} ${collabo.lastName}</option>
+    #{/list}
+    </select>
+    <input type="submit" value="valider"/>
+</form>
+
+</body>
+</html>

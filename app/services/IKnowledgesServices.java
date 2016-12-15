@@ -15,5 +15,7 @@ public interface IKnowledgesServices {
 
     public Knowledge getKnowledgeByName(String name);
 
+    public List<Knowledge> getAllKnowledgeJson();
+
     public void modifyKnowledge(Knowledge knowledge,String level);
 }

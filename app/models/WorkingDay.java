@@ -16,7 +16,9 @@ public class WorkingDay extends Model {
     public Collaborator collaborator;
     @Temporal(TemporalType.DATE)
     public Date dayDate;
-    public String morningActivity;
-    public String afternoonActivity;
+    public String morningActivity1;
+    public String morningActivity2;
+    public String afternoonActivity1;
+    public String afternoonActivity2;
 
 }

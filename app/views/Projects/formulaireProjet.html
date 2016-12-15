@@ -1,0 +1,50 @@
+#{extends 'main.html' /}
+#{set title:'Projects' /}
+
+<a href="/" xmlns="http://www.w3.org/1999/html">Retourner à l'accueil</a>
+<a href="/formulaireProjet">Ajouter un Projet</a>
+
+<form action="@{ProjectController.createProject}" method="post">
+    <fieldset>
+        <legend>Identité du Projet</legend>
+        <label>Nom</label>
+        <input type="text" name="projectName" placeholder="Nom du projet" required autofocus/>
+        <br/><br/>
+        <label>Type de Projet</label>
+        <div class="toggleButtonFormProject">
+        <input type="radio"  name="projectType" value="INTERNAL" checked> Interne </input>
+        <input type="radio"  name="projectType" value="CLIENT"> Client </input>
+        </div>
+            <div id="choixClient" style="display: none">
+                <select name="projectClient">
+                #{list items:listClient, as:'client'}
+                    <option value=${client.id} >${client.corporateName}</option>
+                #{/list}
+                </select>
+
+            </div>
+
+        </select>
+    </fieldset>
+    <br/>
+    <fieldset>
+
+    </fieldset>
+    <br/>
+    <fieldset>
+
+    </fieldset>
+    <br/>
+    <fieldset>
+
+    </fieldset>
+    <br/>
+    <fieldset>
+        <button type=submit>Valider</button>
+    </fieldset>
+</form>
+
+#{set 'moreScripts'}
+    #{script 'formProject.js'/}
+
+#{/set}

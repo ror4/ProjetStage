@@ -2,11 +2,9 @@ package controllers;
 
 import models.Collaborator;
 import models.Knowledge;
+import models.WorkingDay;
 import play.mvc.Controller;
-import services.CollaboServices;
-import services.ICollaboServices;
-import services.IKnowledgesServices;
-import services.KnowledgesServices;
+import services.*;
 
 import java.util.*;
 
@@ -26,11 +24,18 @@ public class CollaborateurController extends Controller{
         List<Knowledge> listKnowledges = Knowledge.findAll();
         renderTemplate("/formulaireCollaborateur.html",listKnowledges);
     }
-
+    public static void formAddWorkindDay(){
+        List<Collaborator> listeCollabo = new ArrayList();
+        ICollaboServices var = new CollaboServices();
+        listeCollabo = var.getAllCollabo();
+        List<WorkingDay> workingDayList = new ArrayList();
+        //IWorkingDayService = var.findAll
+        renderTemplate("/formulaireJoursTravailles.html", listeCollabo);
+    }
     public void createCollaborator (String firstName, String lastName, String user_email,Date startDate,
-                                    Date endDate,Integer anglais, String role){
+                                    Date endDate, String knowledges, String role){
         ICollaboServices var2 = new CollaboServices();
-        var2.createCollabo(firstName, lastName, user_email, startDate, endDate, anglais,role);
+        var2.createCollabo(firstName, lastName, user_email, startDate, endDate, knowledges, role);
         collabo();
     }
 }
