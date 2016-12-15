@@ -15,6 +15,7 @@ public class Profile extends Model{
     public float dailyRate;
     public float daysSold;
 
+
     @OneToMany (mappedBy = "profile")
     public Set<WorkingDayActivities> workingDayActivities;
 

@@ -2,8 +2,11 @@ package controllers;
 
 
 import models.Client;
+import models.Profile;
 import models.Project;
 
+import services.IProfileServices;
+import services.ProfileServices;
 import services.ProjectServices;
 import services.IProjectServices;
 
@@ -31,8 +34,12 @@ public class ProjectController extends Controller {
     public void createProject(String projectName, Project.Type projectType){
 
         List<Client> listClient = new ArrayList();
-        IClientService var = new ClientServices();
-        listClient = var.getAllProject();
+//        IClientService var = new ClientServices();
+//        listClient = var.getAllProject();
+        
+        List<Profile> profilList = new ArrayList();
+        IProfileServices var3 = new ProfileServices();
+        profilList = var3.getAllProfile();
 
         IProjectServices var2 =  new ProjectServices();
         var2.createProject(projectName, projectType);
