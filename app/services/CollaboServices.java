@@ -15,7 +15,7 @@ public class CollaboServices implements ICollaboServices{
 
     @Override
     public void createCollabo(String firstName, String lastName, String user_email,Date startDate,
-                              Date endDate, Integer level, String role ) {
+                              Date endDate, String knowledges, String role ) {
         Collaborator collaborator = new Collaborator();
         collaborator.firstName=firstName.trim();
         collaborator.lastName=lastName.trim();
@@ -23,18 +23,27 @@ public class CollaboServices implements ICollaboServices{
         collaborator.startDate=startDate;
         collaborator.endDate=endDate;
         collaborator.save();
-        addKnowledgeToCollabo(level,collaborator);
         addRoleToCollabo(role ,collaborator);
+        addKnowledgeToCollabo(knowledges,collaborator);
     }
 
     @Override
-    public void addKnowledgeToCollabo(Integer level, Collaborator collabo) {
-        Knowledge_Collaborator know = new Knowledge_Collaborator();
-        Knowledge knowledge = KnowledgesController.getKnowledgeByName("anglais");
-        know.knowledge=knowledge;
-        know.level=level;
-        know.collaborator=collabo;
-        know.save();
+    public void addKnowledgeToCollabo(String knowledges, Collaborator collabo) {
+        if(!knowledges.equals("")){
+            String[] parts = knowledges.split("-");
+            Integer taille = parts.length;
+            for (int i=0;i<taille;i++) {
+                Knowledge knowledge = new Knowledge();
+                Knowledge_Collaborator know = new Knowledge_Collaborator();
+                String[] parts2 = parts[i].split(",");
+                Long id = Long.parseLong(parts2[0]);
+                knowledge = Knowledge.findById(id);
+                know.knowledge = knowledge;
+                know.level = Integer.parseInt(parts2[1]);
+                know.collaborator = collabo;
+                know.save();
+            }
+        }
     }
     @Override
     public void addRoleToCollabo(String roleName, Collaborator collabo){

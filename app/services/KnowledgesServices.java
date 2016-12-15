@@ -31,6 +31,12 @@ public class KnowledgesServices implements IKnowledgesServices {
     }
 
     @Override
+    public List<Knowledge> getAllKnowledgeJson() {
+        List<Knowledge> know = Knowledge.findAll();
+        return know;
+    }
+
+    @Override
     public void modifyKnowledge(Knowledge knowledge, String level) {
 
     }
