@@ -5,9 +5,15 @@
 # Home page
 GET     /                                       Application.index
 GET     /collaborateurs                         CollaborateurController.collabo
+GET     /gestionJourCollabo                     CollaborateurController.formAddWorkindDay
 GET     /formulaireCollaborateur                CollaborateurController.formCollabo
+
 POST    /collaborateurs                         CollaborateurController.createCollaborator
 
+GET     /projects                               ProjectController.projects
+GET     /formulaireProjet                       ProjectController.formulaireProject
+
+POST    /projects                               ProjectController.createProject
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

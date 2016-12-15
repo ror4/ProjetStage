@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+#{set title:'Projects' /}
+
+<a href="/">Retourner à l'accueil</a>
+<a href="/formulaireProjet">Ajouter un Projet</a>
+
+
+<ul>
+#{list items: ProjectsList, as:'project'}
+    <li>${project.name} </li>
+#{/list}
+</ul>

@@ -9,9 +9,11 @@ import java.util.Set;
 @Entity
 public class Project extends Model {
     public String name;
-    public enum Type{
+    public static enum Type{
         INTERNAL, CLIENT
+
     }
+    public Type type;
 
     @ManyToOne
     public Client client;
@@ -35,4 +37,5 @@ public class Project extends Model {
     public enum Status{
         PENDING, ONGOING, GUARANTEE, MAINTENANCE, DONE
     }
+    public Status status;
 }

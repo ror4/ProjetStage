@@ -18,16 +18,14 @@ public class Collaborator extends Model{
     @Required
     public String firstName;
 
-    //@Required
+    @Required
     public String lastName;
 
-    //@Required
+    @Required
     @Email
-
-
     public String email;
 
-    //@Required
+    @Required
     @Temporal(TemporalType.DATE)
     public Date startDate;
 
