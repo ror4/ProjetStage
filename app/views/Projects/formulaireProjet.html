@@ -28,11 +28,15 @@
     </fieldset>
     <br/>
     <fieldset>
-        <select name="project.profiles" multiple>
+
         #{list items:profilList, as:'profile'}
-            <option value=${profile.id} >${profile.name}</option>
+
+              <input  class="choixProfil" type="checkbox" name="profile.id" value="profile.id"/> ${profile.name}
+              <input style="display: none" type="number" min="0,25" step="0.25" name="profile.name" placeholder="nbr jour(s) vendu(s)"/>
+            <br/>
+
         #{/list}
-        </select>
+
     </fieldset>
     <br/>
     <fieldset>

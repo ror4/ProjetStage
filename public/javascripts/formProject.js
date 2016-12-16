@@ -23,3 +23,7 @@ $(".toggleButtonFormProject").change(function(){
     $("#choixClient").toggle();
 });
 
+$(".choixProfil").change(function(){
+    $( this ).next().toggle();
+});
+
