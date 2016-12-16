@@ -4,7 +4,9 @@
 
 # Home page
 GET     /                                       Application.index
+
 GET     /collaborateurs                         CollaborateurController.collabo
+GET     /collaborateurs/new                     CollaborateurController.formCollabo
 GET     /gestionJourCollabo                     CollaborateurController.formAddWorkindDay
 GET     /formulaireCollaborateur                CollaborateurController.formCollabo
 GET     /formConnaissance                       CollaborateurController.formConnaissance
@@ -12,10 +14,17 @@ GET     /formConnaissance                       CollaborateurController.formConn
 POST    /collaborateurs                         CollaborateurController.createCollaborator
 GET     /getAllKnowledgeJson                    KnowledgesController.getAllKnowledgeJson
 
+GET     /salary/add/{id}                        SalariesHistoryController.addSalary
+GET     /salary/history/{id}                    SalariesHistoryController.showSalary
+
+GET     /clients                                ClientController.clients
+GET     /clients/new                            ClientController.create
+
 GET     /projects                               ProjectController.projects
 GET     /formulaireProjet                       ProjectController.formulaireProject
 
 POST    /projects                               ProjectController.createProject
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -7,10 +7,16 @@
 <a class="lien" href="http://www.topito.com/quiz/auriez-vous-fait-un-bon-collabo">Test collaborateur</a> <br/><br/>
 
 <strong>Liste collaborateurs :</strong>
+<a href="/">Retourner à l'accueil</a>
+<a href="@{CollaborateurController.formCollabo}">Ajouter un collaborateur</a>
+<a href="/gestionJourCollabo"> Gestion jours travaillés</a>
+<a class="lien" href="http://www.topito.com/quiz/auriez-vous-fait-un-bon-collabo">Test collaborateur</a>
 
 <ul>
 #{list items:listeCollabo, as:'collabo'}
-    <li>${collabo.firstName} ${collabo.lastName}</li>
+    <li>${collabo.firstName} ${collabo.lastName} <br/>
+        <a href="@{SalariesHistoryController.addSalary(collabo.id)}"><button> Add Salary </button></a> <br/>
+        <a href="@{SalariesHistoryController.showSalary(collabo.id)}"><button> Show Salary History </button></a> <br/><br/></li>
 #{/list}
 </ul>
 

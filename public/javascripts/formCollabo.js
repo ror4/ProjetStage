@@ -2,6 +2,11 @@ $( document ).ready(function() {
     importJson();
 });
 
+$( ".toggleSalaryButton" ).click(function() {
+    $( ".toggleSalary" ).toggle();
+});
+
+
 function affichage(data){
     console.log(data);
     var nombre = 0;

@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+#{set title:'Clients' /}
+
+<a href="@{Application.index}">Home</a>
+<a href="@{ClientController.create}">Add Client</a>
+<h2>Clients</h2>
+
+<table>
+    <tr>
+        <th>Corporate Name</th>
+        <th>Postal Code</th>
+        <th>Telephone Number</th>
+    </tr>
+#{list items:listClients, as:'clients'}
+    <tr>
+        <td>${clients.corporateName}</td>
+        <td>${clients.postalCode}</td>
+        <td>${clients.telephoneNumber}</td>
+    </tr>
+#{/list}
+</table>

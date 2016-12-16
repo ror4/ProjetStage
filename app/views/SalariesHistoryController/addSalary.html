@@ -1,0 +1,13 @@
+<a href="@{Application.index}">Home</a>
+<a href="@{SalariesHistoryController.showSalary(collaborator.id)}">Salaries History</a>
+
+<h2> Add Salary </h2>
+
+<form action="@{SalariesHistoryController.save}" method="post">
+    Salary :<input type="number" name="salariesHistory.salary" value="${flash.salary}"/><br/>
+    Comments :<input type="text"  name="salariesHistory.comments" value="${flash.comments}"/><br/>
+    <label>Change Date</label>
+    <input type="date" name="salariesHistory.changeDate" placeholder="25/12/2000">
+    <input type="hidden" type="number" name="id" value="${collaborator.id}"/><br/>
+    <input type="submit" value="Add"> <a href="@{Application.index}">Cancel</a>
+</form>

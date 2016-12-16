@@ -1,0 +1,11 @@
+<a href="@{Application.index}">Home</a>
+<a href="@{ClientController.clients}">Clients</a>
+
+<h2> Add Salary </h2>
+
+<form action="@{ClientController.save}" method="post">
+    Corporate name :<input type="text" name="client.corporateName" value="${flash.corporateName}"/><br/>
+    Postal Code :<input type="text"  name="client.postalCode" value="${flash.postalCode}"/><br/>
+    Telephone Number :<input type="text"  name="client.telephoneNumber" value="${flash.telephoneNumber}"/><br/>
+    <input type="submit" value="Add"> <a href="@{Application.index}">Cancel</a>
+</form>

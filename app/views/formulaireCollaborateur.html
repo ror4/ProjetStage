@@ -26,6 +26,20 @@
             <option value="cadre">Cadre </option>
         </select>
     </fieldset>
+    <fieldset>
+        <legend> Salary </legend>
+        <button type="button" class="toggleSalaryButton">Add</button>
+        <div class="toggleSalary" style="display:none">
+            <div class="salary">
+                <br/>
+                    Salary :<input type="number" name="salary" value="${flash.salary}"/><br/>
+                    Comments :<input type="text"  name="comments" value="${flash.comments}"/><br/>
+                    <label>Change Date</label>
+                    <input type="date" name="changeDate" placeholder="25/12/2000">
+            </div>
+        </div>
+
+    </fieldset>
     <br/>
     <fieldset>
         <legend>Dates</legend>

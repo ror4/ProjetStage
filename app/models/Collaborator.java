@@ -33,6 +33,7 @@ public class Collaborator extends Model{
     public Date endDate;
 
     @OneToMany (mappedBy = "collaborator")
+    @OrderBy("changeDate ASC")
     public Set<SalariesHistory> salariesHistories;
 
     //@Required

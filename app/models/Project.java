@@ -9,33 +9,34 @@ import java.util.Set;
 @Entity
 public class Project extends Model {
     public String name;
-    public static enum Type{
-        INTERNAL, CLIENT
 
+    public enum Type {
+        INTERNAL, CLIENT
     }
+
     public Type type;
+
+    public enum Status {
+        PENDING, ONGOING, GUARANTEE, MAINTENANCE, DONE
+    }
+
+    public Status status;
 
     @ManyToOne
     public Client client;
 
     @ManyToMany
-    @JoinTable(name="Project_Contact")
+    @JoinTable(name = "Project_Contact")
     public List<Contact> contacts;
 
     @ManyToMany
-    @JoinTable(name="Project_Profile")
+    @JoinTable(name = "Project_Profile")
     public List<Profile> profiles;
 
     @ManyToMany
-    @JoinTable(name="Collaborator_Project")
+    @JoinTable(name = "Collaborator_Project")
     public List<Collaborator> collaborators;
 
-    @OneToMany (mappedBy = "project")
+    @OneToMany(mappedBy = "project")
     public Set<WorkingDayActivities> workingDayActivities;
-
-
-    public enum Status{
-        PENDING, ONGOING, GUARANTEE, MAINTENANCE, DONE
-    }
-    public Status status;
 }
