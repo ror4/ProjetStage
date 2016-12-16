@@ -20,6 +20,7 @@ public class KnowledgesController extends Controller{
     public void addKnowledge(String name) {
         IKnowledgesServices var = new KnowledgesServices();
         var.addKnowledge(name);
+        CollaborateurController.formConnaissance ();
     }
 
     public static Knowledge getKnowledgeByName(String name) {

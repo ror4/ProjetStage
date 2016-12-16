@@ -1,0 +1,24 @@
+#{extends 'main.html' /}
+#{set title:'Formulaire connaissance' /}
+
+<a href="/">Retourner à l'accueil</a>
+<a href="/collaborateurs">Retour à la liste des collaborateurs</a>
+<br/><br/>
+
+<strong>Liste des connaissances :</strong><br/>
+<ul>
+#{list items:listKnowledges, as:'know'}
+    <li>${know.name}</li>
+#{/list}
+</ul>
+<br/>
+
+Ajouter une connaissance
+<form action="@{KnowledgesController.addKnowledge}" method="post">
+    <input type="text" name="name" placeholder="Nom de la connaissance">
+    <button class="validForm" type=submit>Valider</button>
+</form>
+
+#{set 'moreScripts'}
+#{script 'formCollabo.js'/}
+#{/set}

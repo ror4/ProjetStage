@@ -7,6 +7,7 @@ GET     /                                       Application.index
 GET     /collaborateurs                         CollaborateurController.collabo
 GET     /gestionJourCollabo                     CollaborateurController.formAddWorkindDay
 GET     /formulaireCollaborateur                CollaborateurController.formCollabo
+GET     /formConnaissance                       CollaborateurController.formConnaissance
 
 POST    /collaborateurs                         CollaborateurController.createCollaborator
 GET     /getAllKnowledgeJson                    KnowledgesController.getAllKnowledgeJson

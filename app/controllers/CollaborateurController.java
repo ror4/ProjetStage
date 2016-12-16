@@ -21,9 +21,14 @@ public class CollaborateurController extends Controller{
     }
 
     public static void formCollabo (){
-        List<Knowledge> listKnowledges = Knowledge.findAll();
-        renderTemplate("/formulaireCollaborateur.html",listKnowledges);
+        renderTemplate("/formulaireCollaborateur.html");
     }
+
+    public static void formConnaissance (){
+        List<Knowledge> listKnowledges = Knowledge.findAll();
+        renderTemplate("/formConnaissance.html",listKnowledges);
+    }
+
     public static void formAddWorkindDay(){
         List<Collaborator> listeCollabo = new ArrayList();
         ICollaboServices var = new CollaboServices();
