@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0dd88ca-bf34-46fc-b78f-d9c45e94ea5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/formConnaissance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CollaborateurController.java" afterPath="$PROJECT_DIR$/app/controllers/CollaborateurController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/KnowledgesController.java" afterPath="$PROJECT_DIR$/app/controllers/KnowledgesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/collaborateurs.html" afterPath="$PROJECT_DIR$/app/views/collaborateurs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/index.html" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
     </list>
     <ignored path="ProjetStage2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="routes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -54,8 +52,28 @@
       <file leaf-file-name="collaborateurs.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="8" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -73,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formConnaissance.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formConnaissance.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/formConnaissance.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -124,15 +142,15 @@
         <option value="$PROJECT_DIR$/app/views/formulaireCollaborateur.html" />
         <option value="$PROJECT_DIR$/app/controllers/ProjectController.java" />
         <option value="$PROJECT_DIR$/public/javascripts/formCollabo.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
         <option value="$PROJECT_DIR$/public/javascripts/index.js" />
         <option value="$PROJECT_DIR$/app/controllers/CollaborateurController.java" />
         <option value="$PROJECT_DIR$/app/views/Projects/formConnaissance.html" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/views/collaborateurs.html" />
         <option value="$PROJECT_DIR$/app/controllers/KnowledgesController.java" />
         <option value="$PROJECT_DIR$/app/views/formConnaissance.html" />
+        <option value="$PROJECT_DIR$/app/views/collaborateurs.html" />
+        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -889,7 +907,21 @@
       <option name="project" value="LOCAL" />
       <updated>1481816029322</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="ajout connaissance">
+      <created>1481878140973</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1481878140973</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ajout connaissance (propre)">
+      <created>1481878911926</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1481878911926</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -996,7 +1028,9 @@
     <MESSAGE value="test collabo" />
     <MESSAGE value="test collabo (trop style !!!)" />
     <MESSAGE value="test collabo (trop style ++ !!!)" />
-    <option name="LAST_COMMIT_MESSAGE" value="test collabo (trop style ++ !!!)" />
+    <MESSAGE value="ajout connaissance" />
+    <MESSAGE value="ajout connaissance (propre)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout connaissance (propre)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1167,14 +1201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1240,23 +1266,15 @@
         <state relative-caret-position="421">
           <caret line="50" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#fieldset#3;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#fieldset#4;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1270,14 +1288,6 @@
             <element signature="e#572#573#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,6 +1305,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/collaborateurs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="8" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="8" />
           <folding />
         </state>
       </provider>
